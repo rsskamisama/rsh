@@ -1,0 +1,14 @@
+/* pages/shifa/shifa.wxss */
+.box_flex{
+  display: flex;
+  margin: 20rpx;
+  justify-content: space-between;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 75rpx;
+  background-color: white;
+}

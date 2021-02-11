@@ -1,0 +1,55 @@
+<view style="position:fixed; top:0;width: 750rpx;  background-color: WhiteSmoke	;">
+  <view class="date">
+    <view  style="{{item.id==1||item.id==7 ? 'color:CornflowerBlue' :'color:gray'}}" wx:for="{{date}}" wx:key='item'>{{item.date}}
+    </view>   
+  </view>
+</view>
+<view class="white">
+  <view class="ul">
+    <view class="center">
+      {{year}}年{{month}}月
+    </view>
+    <view class="li" wx:for="{{lastMonthDate}}" wx:key="item">
+      <view class="hidden">
+        {{item.num}}
+      </view>
+    </view>
+    <view class="unchecked_li {{item.num==type?'checked_li':''}}"  bindtap="xuanze" wx:for="{{thisMonthDate}}" data-id="{{index}}" data-year="{{item.year}}" data-month="{{item.month}}" wx:key="item">
+      <view class="unchecked_yuan {{item.num==type?'checked_yuan':''}}"  style="{{item.num>=day&&item.num<=day+6 ? '' :'visibility: hidden;'}}"> 
+        ￥40 
+      </view>
+      <view class="center"  style="{{item.num>=day&&item.num<=day+6 ? 'font-weight: bolder;' :'color:gray'}}">
+        {{item.num}}
+      </view>
+    </view>
+    <view class="li" wx:for="{{nextMonthDate}}" wx:key="item">
+      <view class="hidden">
+        {{item.num}}
+      </view>
+    </view>
+  </view>
+
+  <view class="ul">
+    <view class="center">
+      {{year1}}年{{month1}}月
+    </view>
+    <view class="li" wx:for="{{lastMonthDate1}}" wx:key="item">
+      <view class="hidden">
+        {{item.num}}
+      </view>
+    </view>
+    <view class="unchecked_li {{item.num==type1?'checked_li':''}}"  data-id="{{index}}" data-year="{{item.year}}" data-month="{{item.month}}" bindtap="xuanze1" wx:for="{{thisMonthDate1}}"  wx:key="item">
+      <view class="unchecked_yuan {{item.num==type1?'checked_yuan':''}}" style="{{item.num<=nextBegin.length ? '' :'visibility: hidden;'}}">
+         ￥40 
+      </view>
+      <view class="center" style="{{item.num<=nextBegin.length ? 'font-weight: bolder;' :'color:gray'}}">
+        {{item.num}}
+      </view>
+    </view>
+    <view class="li" wx:for="{{nextMonthDate1}}" wx:key="item">
+      <view class="hidden">
+        {{item.num}}
+      </view>
+    </view>
+  </view>
+</view>

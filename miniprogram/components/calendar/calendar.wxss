@@ -1,0 +1,6 @@
+/* components/calendar/calendar.wxss */
+.week{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

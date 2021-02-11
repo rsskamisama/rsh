@@ -1,0 +1,14 @@
+/* pages/query/query.wxss */
+.date{
+  display: flex;
+  text-align:center;
+}
+.date_unchecked{
+  background-color: white;
+  padding-bottom:15rpx ;
+}
+.date_checked{
+  background-color: CornflowerBlue;
+  color: white;
+  padding-bottom:15rpx ;
+}

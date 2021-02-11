@@ -1,0 +1,9 @@
+<!--pages/shifa/shifa.wxml-->
+<view class="box_flex">
+<view bindtap="shifa_zh" class="box">
+{{zh}}
+</view>
+<view  bindtap="shifa_gz" class="box">
+{{gz}}
+</view>
+</view>

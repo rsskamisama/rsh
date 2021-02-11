@@ -1,0 +1,4 @@
+<!--pages/zhongdian/zhongdian.wxml-->
+<view class="box_flex">
+<view class="box" bindtap="zhongdian">{{zhongdian}}</view>
+</view>

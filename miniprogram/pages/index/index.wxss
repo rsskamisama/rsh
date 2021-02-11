@@ -1,0 +1,50 @@
+.color{
+  background-color: #FFFFFF;
+}
+.index_pic{
+  height:200rpx;
+}
+.index{
+  padding: 30rpx;
+}
+.biaoqian{
+  display: flex; 
+  justify-content: space-between;
+  padding-bottom: 30rpx;
+  font-size: smaller;
+  color: WhiteSmoke	;
+}
+.img{
+  position: absolute;
+  left: 45%;
+  width: 76.4rpx;
+  height: 76.4rpx;
+}
+.didian{
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+  padding-bottom: 30rpx;
+  font-weight: bolder;
+  border-bottom:lightgray 1rpx solid ;
+}
+
+.date{
+  font-weight: bolder;
+  font-size: large;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom:lightgray 1rpx solid ;
+}
+.button_view{
+  width: 100%;
+  margin-top: 30rpx;
+
+}
+.button{
+  width: 100% !important;
+  width: 500rpx;
+  background-color:CornflowerBlue;
+   color:#ffff;
+  
+}

@@ -1,0 +1,4 @@
+<!--components/calendar/calendar.wxml-->
+<view class="week">
+  <view  style="{{item.id==1||item.id==7 ? 'color:CornflowerBlue':'color:gray'}}" wx:for="{{week}}" wx:key='item'>{{item.date}}</view>
+</view>

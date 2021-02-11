@@ -1,0 +1,23 @@
+<view class="color">
+<view class="index_pic">
+
+</view>
+<view class="index">
+
+<view class="biaoqian">
+<view>出发地</view>
+<view>目的地</view>
+</view>
+<view class="didian">
+<view bindtap="shifa">{{shifa}}</view>
+<image mode="aspectFit" class="img" animation="{{imgAnimation}}" src="../../change.png" bindtap="change"></image>
+<view bindtap="zhongdian">{{zhongdian}}</view>
+</view>
+<view class="date" bindtap="calendar">
+  <view>{{date}}</view>
+</view>
+<view class="button_view">
+<button class="button" bindtap="query">查询</button>
+</view>
+</view>
+</view>

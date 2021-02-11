@@ -1,0 +1,12 @@
+<!--pages/query/query.wxml-->
+<view class="date">
+<view class="date_unchecked {{item.id==type ? 'date_checked':''}}" bindtap="click" wx:for="{{aWeek}}" data-id="{{index}}">{{item.day}}{{item.newday}}</view>
+ </view>
+
+ <view>
+   <view>{{time}}</view>
+   <view>{{price}}</view>
+   <view>{{shifazhan}}</view>
+   <view>{{zhongdianzhan}}</view>
+   <button>立即预定</button>
+ </view>
